@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Pria Allatip Wijaya</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edf3;
+    color: #333;
+    padding: 30px 12px;
+}
+
+.cv {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 8px 30px #0002;
+}
+
+.header {
+    background: #172b4d;
+    color: white;
+    padding: 35px;
+    border-bottom: 5px solid #b79a5b;
+}
+
+.header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #cf dcee;
+    color: #cfdcee;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.content {
+    padding: 30px 35px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #172b4d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #b79a5b;
+}
+
+p, li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 8px;
+}
+
+.label {
+    font-weight: bold;
+    color: #172b4d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background: #172b4d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #b79a5b;
+}
+
+@media (max-width: 500px) {
+    .header, .content {
+        padding: 24px 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .data {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 10px;
+    }
+
+    .label {
+        margin-top: 6px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .cv {
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    button {
+        display: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <header class="header">
+        <h1>PRIA ALLATIP WIJAYA</h1>
+        <p>CURRICULUM VITAE</p>
+    </header>
+
+    <main class="content">
+
+        <section>
+            <h2>Profil Singkat</h2>
+            <p>
+                Saya adalah pribadi yang disiplin, bertanggung jawab,
+                memiliki semangat belajar, dan siap mengembangkan
+                kemampuan. Saya bersedia mengikuti arahan, bekerja
+                sama dengan tim, serta menjalankan tugas dengan baik.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Diri</h2>
+
+            <div class="data">
+                <div class="label">Tempat, tanggal lahir</div>
+                <p>Bandung, 12 April 2010</p>
+
+                <div class="label">Alamat</div>
+                <p>Bandung, Jl. Babakan Cihapit RT 3/RW 7</p>
+
+                <div class="label">Nomor HP</div>
+                <p>085222600811</p>
+
+                <div class="label">Pendidikan</div>
+                <p>SMA/SMK</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Pendidikan</h2>
+            <p>
+                SMA/SMK<br>
+                <i>Nama sekolah dan tahun pendidikan belum dicantumkan.</i>
+            </p>
+        </section>
+
+        <section>
+            <h2>Pengalaman Kerja</h2>
+            <p>
+                Belum memiliki pengalaman kerja formal.
+                Siap belajar dan mengembangkan keterampilan
+                melalui kesempatan kerja yang sesuai.
+            </p>
+        </section>
+
+        <section>
+            <h2>Keahlian dan Sikap Kerja</h2>
+            <ul>
+                <li>Disiplin dan bertanggung jawab</li>
+                <li>Mau belajar hal baru</li>
+                <li>Mampu bekerja sama dalam tim</li>
+                <li>Mudah beradaptasi</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Posisi yang Dilamar</h2>
+            <p>Belum ditentukan.</p>
+        </section>
+
+    </main>
+</div>
+
+<button onclick="window.print()">
+    Cetak / Simpan sebagai PDF
+</button>
+
+</body>
+  </html>
+  
